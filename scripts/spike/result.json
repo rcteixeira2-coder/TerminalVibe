@@ -1,0 +1,76 @@
+{
+  "sessionId": "a4772ef7-f379-4936-9200-059fd192b24f",
+  "paneId": "6a59950f-22b9-4f9f-a236-e6a0612b1e8b",
+  "queries": {
+    "XTVERSION": 2,
+    "kittyKbd": 1,
+    "7501?": 1,
+    "DA1": 4,
+    "DECRQM2026": 2,
+    "DECRQM1016": 1,
+    "cellSize": 1
+  },
+  "modesSet": [
+    "25",
+    "2004",
+    "2031",
+    "1004",
+    "1049",
+    "1000",
+    "1002",
+    "1003",
+    "1006",
+    "2026",
+    "1016"
+  ],
+  "osc": [
+    {
+      "t": 1793100824772,
+      "state": "idle",
+      "app": "claude-code"
+    },
+    {
+      "t": 1793100824772,
+      "other": "0",
+      "v": "Claude Code"
+    },
+    {
+      "t": 1793100829849,
+      "state": "working",
+      "app": "claude-code"
+    },
+    {
+      "t": 1793100830770,
+      "other": "0",
+      "v": "Resposta de confirmação simples"
+    },
+    {
+      "t": 1793100833461,
+      "state": "done",
+      "app": "claude-code"
+    },
+    {
+      "t": 1793100854845,
+      "state": "working",
+      "app": "claude-code"
+    },
+    {
+      "t": 1793100854876,
+      "state": "clear"
+    },
+    {
+      "t": 1793100854879,
+      "state": "clear"
+    },
+    {
+      "t": 1793100854879,
+      "state": "clear"
+    },
+    {
+      "t": 1793100854879,
+      "other": "0",
+      "v": ""
+    }
+  ],
+  "hooks": "== SessionStart pane=6a59950f-22b9-4f9f-a236-e6a0612b1e8b\n{\"session_id\":\"a4772ef7-f379-4936-9200-059fd192b24f\",\"transcript_path\":\"/Users/rodrigoteixeira/.claude/projects/-Users-rodrigoteixeira-Desktop-Terminal/a4772ef7-f379-4936-9200-059fd192b24f.jsonl\",\"cwd\":\"/Users/rodrigoteixeira/Desktop/Terminal\",\"scratchpad_dir\":\"/private/tmp/claude-501/-Users-rodrigoteixeira-Desktop-Terminal/a4772ef7-f379-4936-9200-059fd192b24f/scratchpad\",\"hook_event_name\":\"SessionStart\",\"source\":\"startup\",\"model\":\"claude-haiku-5-5\"}\n\n== UserPromptSubmit pane=6a59950f-22b9-4f9f-a236-e6a0612b1e8b\n{\"session_id\":\"a4772ef7-f379-4936-9200-059fd192b24f\",\"transcript_path\":\"/Users/rodrigoteixeira/.claude/projects/-Users-rodrigoteixeira-Desktop-Terminal/a4772ef7-f379-4936-9200-059fd192b24f.jsonl\",\"cwd\":\"/Users/rodrigoteixeira/Desktop/Terminal\",\"scratchpad_dir\":\"/private/tmp/claude-501/-Users-rodrigoteixeira-Desktop-Terminal/a4772ef7-f379-4936-9200-059fd192b24f/scratchpad\",\"prompt_id\":\"cd6acdc8-c335-4680-87c2-ba4192f850c9\",\"permission_mode\":\"auto\",\"hook_event_name\":\"UserPromptSubmit\",\"prompt\":\"responda apenas a palavra ok\"}\n\n== Stop pane=6a59950f-22b9-4f9f-a236-e6a0612b1e8b\n{\"session_id\":\"a4772ef7-f379-4936-9200-059fd192b24f\",\"transcript_path\":\"/Users/rodrigoteixeira/.claude/projects/-Users-rodrigoteixeira-Desktop-Terminal/a4772ef7-f379-4936-9200-059fd192b24f.jsonl\",\"cwd\":\"/Users/rodrigoteixeira/Desktop/Terminal\",\"scratchpad_dir\":\"/private/tmp/claude-501/-Users-rodrigoteixeira-Desktop-Terminal/a4772ef7-f379-4936-9200-059fd192b24f/scratchpad\",\"prompt_id\":\"cd6acdc8-c335-4680-87c2-ba4192f850c9\",\"permission_mode\":\"auto\",\"effort\":{\"level\":\"medium\"},\"hook_event_name\":\"Stop\",\"stop_hook_active\":false,\"last_assistant_message\":\"ok\",\"background_tasks\":[],\"session_crons\":[]}\n\n"
+}

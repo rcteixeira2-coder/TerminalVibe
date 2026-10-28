@@ -1,0 +1,17 @@
+{
+  "id": "aprovacoes-pendentes",
+  "name": "Aprovações pendentes",
+  "version": "1.0.0",
+  "description": "Botão na barra lateral que lista as sessões esperando você e um painel que atualiza sozinho.",
+  "main": "main.js",
+  "permissions": ["session.events", "notify"],
+  "buttons": [
+    { "id": "listar", "label": "Quem precisa de mim?", "icon": "🔔", "location": "sidebar", "action": { "type": "script" } }
+  ],
+  "commands": [
+    { "id": "listar", "title": "Aprovações pendentes: listar", "action": { "type": "script" } }
+  ],
+  "panels": [
+    { "id": "painel", "title": "Aprovações pendentes", "html": "panel.html" }
+  ]
+}

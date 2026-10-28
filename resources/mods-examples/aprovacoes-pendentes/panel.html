@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 13px -apple-system, sans-serif; margin: 0; padding: 12px; color: #d5d9f0; background: #1f2030; }
+  @media (prefers-color-scheme: light) { body { color: #23263a; background: #fff; } }
+  .item { border: 1px solid #36395a; border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; }
+  .estado { font-size: 11px; font-weight: 600; text-transform: uppercase; color: #ff9e3b; }
+  .vazio { opacity: 0.6; }
+</style>
+</head>
+<body>
+<div id="lista" class="vazio">Carregando…</div>
+<script>
+  const el = document.getElementById('lista')
+  window.addEventListener('message', (e) => {
+    if (!e.data || e.data.kind !== 'cockpit') return
+    const lista = e.data.message || []
+    el.className = lista.length ? '' : 'vazio'
+    el.textContent = ''
+    if (!lista.length) { el.textContent = 'Nenhuma sessão esperando você.'; return }
+    for (const s of lista) {
+      const d = document.createElement('div'); d.className = 'item'
+      const t = document.createElement('div'); t.className = 'estado'; t.textContent = s.estado
+      const n = document.createElement('div'); n.textContent = s.projeto + ' · ' + s.titulo
+      d.append(t, n)
+      if (s.detalhe) { const x = document.createElement('div'); x.style.opacity = 0.7; x.textContent = s.detalhe; d.append(x) }
+      el.append(d)
+    }
+  })
+  parent.postMessage({ message: 'ready' }, '*')
+</script>
+</body>
+</html>

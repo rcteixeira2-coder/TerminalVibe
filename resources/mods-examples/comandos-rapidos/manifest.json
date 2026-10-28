@@ -1,0 +1,16 @@
+{
+  "id": "comandos-rapidos",
+  "name": "Comandos rápidos do Claude",
+  "version": "1.0.0",
+  "description": "Mod declarativo (sem código): botões e comandos ⌘K que digitam comandos comuns na sessão focada.",
+  "buttons": [
+    { "id": "compact", "label": "/compact", "location": "project", "action": { "type": "type", "text": "/compact", "enter": true } },
+    { "id": "status", "label": "git status", "location": "project", "action": { "type": "type", "text": "git status", "enter": true } }
+  ],
+  "commands": [
+    { "id": "clear", "title": "Claude: /clear", "action": { "type": "type", "text": "/clear", "enter": true } },
+    { "id": "resume", "title": "Claude: /resume", "action": { "type": "type", "text": "/resume", "enter": true } },
+    { "id": "novo-claude", "title": "Abrir outro Claude neste projeto", "action": { "type": "spawn", "agent": "claude" } },
+    { "id": "rodar", "title": "Rodar o projeto (último alvo)", "action": { "type": "launch" } }
+  ]
+}

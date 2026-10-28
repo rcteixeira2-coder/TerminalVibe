@@ -1,0 +1,26 @@
+appId: com.rteixeira.cockpit
+productName: Cockpit
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**
+  - resources/**
+  - package.json
+asarUnpack:
+  - node_modules/node-pty/**
+  - resources/**
+extraResources: []
+mac:
+  icon: build/icon.icns
+  target: [dir]
+  identity: "-"
+  hardenedRuntime: false
+  category: public.app-category.developer-tools
+  extendInfo:
+    NSUserNotificationAlertStyle: alert
+electronFuses:
+  runAsNode: false
+  enableNodeOptionsEnvironmentVariable: false
+  enableNodeCliInspectArguments: false
+  onlyLoadAppFromAsar: true

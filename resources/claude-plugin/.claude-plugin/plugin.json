@@ -1,0 +1,5 @@
+{
+  "name": "cockpit-status",
+  "version": "0.1.0",
+  "description": "Avisa o Cockpit do estado desta sessão (trabalhando, aprovação, sua vez, terminou). Só ativo em sessões abertas pelo Cockpit."
+}
